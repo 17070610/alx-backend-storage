@@ -1,5 +1,5 @@
 -- Creates a trigger that updates item quantity after order insertion
-CREATE TRIGGER after_order_insert
+DROP TRIGGER IF EXISTS after_order_insert;
 DELIMITER $$
 AFTER INSERT ON orders
 FOR EACH ROW
